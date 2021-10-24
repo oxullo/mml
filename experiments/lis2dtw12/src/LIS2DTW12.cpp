@@ -21,6 +21,8 @@ LIS2DTW12::LIS2DTW12() :
 
 bool LIS2DTW12::begin(uint8_t address, TwoWire& wire_port)
 {
+    Wire.begin();
+
     this->address = address;
     this->wire_port = &wire_port;
 
@@ -44,7 +46,7 @@ bool LIS2DTW12::begin(uint8_t address, TwoWire& wire_port)
     //Enable Block Data Update
     lis2dtw12_block_data_update_set(&dev_ctx, PROPERTY_ENABLE);
 
-    lis2dtw12_data_rate_set(&dev_ctx, LIS2DTW12_XL_ODR_25Hz);
+    lis2dtw12_data_rate_set(&dev_ctx, LIS2DTW12_XL_ODR_200Hz);
     lis2dtw12_full_scale_set(&dev_ctx, LIS2DTW12_2g);
     lis2dtw12_power_mode_set(&dev_ctx, LIS2DTW12_CONT_LOW_PWR_LOW_NOISE_12bit);
 
