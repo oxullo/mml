@@ -3,6 +3,7 @@
 
 #include "matrix.h"
 #include "imu.h"
+#include "haptics.h"
 #include "rain.h"
 
 
@@ -46,8 +47,10 @@ void Drop::step()
         x = MATRIX_WIDTH - 1;
     }
 
-    if (y > MATRIX_HEIGHT - 1) {
+    if (y > MATRIX_HEIGHT) {
         alive = false;
+        // 9=soft bump, 30%
+        haptics.trigger(9);
     }
 }
 
