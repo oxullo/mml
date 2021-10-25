@@ -28,6 +28,11 @@ public:
     void begin(uint16_t tilt_threshold_min, uint16_t tilt_threshold_max);
     Orientation update();
 
+    Orientation get_orientation() const
+    {
+        return last_orientation;
+    }
+
 private:
     LIS2DTW12 accelerometer;
     uint16_t orientation_counters[MAX_ORIENTATIONS];
