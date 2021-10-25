@@ -2,20 +2,30 @@
 
 #include <Adafruit_DRV2605.h>
 
+#define FASTLED_FORCE_SOFTWARE_PINS
+#define FASTLED_INTERNAL
+#include <FastLED.h>
+
 #include "LIS2DTW12.h"
 
+const uint8_t NUM_LEDS = 64;
+
+
+CRGB leds[NUM_LEDS];
 LIS2DTW12 accel;
 Adafruit_DRV2605 haptics;
 
 
-void blink()
+void matrix_test()
 {
-    static uint32_t ts_lastblink = 0;
+    static uint8_t lptr = 0;
 
-    if (millis() - ts_lastblink > 200) {
-        digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
-        ts_lastblink = millis();
-        haptics.go();
+    FastLED.clear();
+    leds[lptr++] = CRGB::Red;
+    FastLED.show();
+
+    if (lptr == 64) {
+        lptr = 0;
     }
 }
 
@@ -24,8 +34,9 @@ void setup()
     Serial.begin(9600);
     pinMode(LED_BUILTIN, OUTPUT);
     pinMode(HAPTIC_EN_PIN, OUTPUT);
-
     digitalWrite(HAPTIC_EN_PIN, HIGH);
+
+    FastLED.addLeds<WS2812B, MATRIX_PIN, GRB>(leds, NUM_LEDS);
 
     accel.begin();
     haptics.begin();
@@ -45,7 +56,13 @@ void loop()
         Serial.print(accel.mg().y);
         Serial.print(" ");
         Serial.println(accel.mg().z);
+    }
 
-        blink();
+    EVERY_N_MILLISECONDS(16) {
+        matrix_test();
+    }
+
+    EVERY_N_MILLISECONDS(500) {
+        digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
     }
 }
