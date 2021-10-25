@@ -73,7 +73,10 @@ extern "C"
 #define PIN_LED              PIN_LED_13
 #define LED_BUILTIN          PIN_LED_13
 
-#define BUTTON_BUILTIN       (0u)
+#define BUTTON_BUILTIN         (0u)
+#define ACCELEROMETER_INT1_PIN (1u)
+#define MATRIX_PIN             (2u)
+#define HAPTIC_EN_PIN          (3u)
 
 /*
  * Analog pins
