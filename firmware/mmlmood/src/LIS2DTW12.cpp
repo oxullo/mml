@@ -48,6 +48,7 @@ bool LIS2DTW12::begin(uint8_t address, TwoWire& wire_port)
 
     lis2dtw12_data_rate_set(&dev_ctx, LIS2DTW12_XL_ODR_200Hz);
     lis2dtw12_full_scale_set(&dev_ctx, LIS2DTW12_2g);
+    multiplier = 2; // 2g
     lis2dtw12_power_mode_set(&dev_ctx, LIS2DTW12_CONT_LOW_PWR_LOW_NOISE_12bit);
 
     return true;
@@ -111,9 +112,9 @@ void LIS2DTW12::read()
     memset(data_raw_acceleration, 0x00, 3 * sizeof(int16_t));
 
     lis2dtw12_acceleration_raw_get(&dev_ctx, data_raw_acceleration);
-    accel_mg_data.x = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[0]);
-    accel_mg_data.y = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[1]);
-    accel_mg_data.z = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[2]);
+    accel_mg_data.x = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[0]) * multiplier;
+    accel_mg_data.y = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[1]) * multiplier;
+    accel_mg_data.z = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[2]) * multiplier;
 
     memset(&data_raw_temperature, 0x00, sizeof(int16_t));
     lis2dtw12_temperature_raw_get(&dev_ctx, &data_raw_temperature);

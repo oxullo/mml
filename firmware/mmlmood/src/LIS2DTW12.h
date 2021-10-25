@@ -40,6 +40,7 @@ private:
     int16_t data_raw_temperature;
     AccelData accel_mg_data;
     float temperature;
+    uint8_t multiplier;
 
     static int32_t platform_write(void *handle, uint8_t reg, const uint8_t *bufp, uint16_t len);
     static int32_t platform_read(void *handle, uint8_t reg, uint8_t *bufp, uint16_t len);
