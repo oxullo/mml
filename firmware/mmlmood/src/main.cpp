@@ -13,8 +13,8 @@
 #include "flashlight.h"
 
 
-const uint16_t TILT_THRESHOLD_MIN = 2000;
-const uint16_t TILT_THRESHOLD_MAX = 7500;
+const float TILT_THRESHOLD_MIN = 0.4;
+const float TILT_THRESHOLD_MAX = 0.7;
 
 CRGB leds[NUM_LEDS];
 

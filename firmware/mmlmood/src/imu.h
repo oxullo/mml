@@ -25,7 +25,7 @@ public:
 
     IMU();
 
-    void begin(uint16_t tilt_threshold_min, uint16_t tilt_threshold_max);
+    void begin(float tilt_threshold_min, float tilt_threshold_max);
     Orientation update();
 
     Orientation get_orientation() const
@@ -45,8 +45,8 @@ public:
 private:
     LIS2DTW12 accelerometer;
     uint16_t orientation_counters[MAX_ORIENTATIONS];
-    uint16_t tilt_threshold_min;
-    uint16_t tilt_threshold_max;
+    float tilt_threshold_min;
+    float tilt_threshold_max;
     Orientation last_orientation;
 
     IMU::Orientation evaluate_orientation();

@@ -12,7 +12,7 @@ IMU::IMU() :
 }
 
 
-void IMU::begin(uint16_t tilt_threshold_min, uint16_t tilt_threshold_max)
+void IMU::begin(float tilt_threshold_min, float tilt_threshold_max)
 {
     this->tilt_threshold_min = tilt_threshold_min;
     this->tilt_threshold_max = tilt_threshold_max;
@@ -41,24 +41,24 @@ IMU::Orientation IMU::evaluate_orientation()
 {
     IMU::Orientation candidate = IMU::ORIENTATION_UNKNOWN;
 
-    if (abs(accelerometer.mg().z) < tilt_threshold_min) {
-        if (abs(accelerometer.mg().x) < tilt_threshold_min) {
-            if (accelerometer.mg().y > tilt_threshold_max) {
+    if (abs(accelerometer.norm().z) < tilt_threshold_min) {
+        if (abs(accelerometer.norm().x) < tilt_threshold_min) {
+            if (accelerometer.norm().y > tilt_threshold_max) {
                 candidate = IMU::ORIENTATION_VERTICAL_NORMAL;
-            } else if (accelerometer.mg().y < -tilt_threshold_max) {
+            } else if (accelerometer.norm().y < -tilt_threshold_max) {
                 candidate = IMU::ORIENTATION_VERTICAL_180;
             }
-        } else if (abs(accelerometer.mg().y) < tilt_threshold_min) {
-            if (accelerometer.mg().x > tilt_threshold_max) {
+        } else if (abs(accelerometer.norm().y) < tilt_threshold_min) {
+            if (accelerometer.norm().x > tilt_threshold_max) {
                 candidate = IMU::ORIENTATION_VERTICAL_90CW;
-            } else if (accelerometer.mg().x < -tilt_threshold_max) {
+            } else if (accelerometer.norm().x < -tilt_threshold_max) {
                 candidate = IMU::ORIENTATION_VERTICAL_90CCW;
             }
         }
     } else {
-        if (accelerometer.mg().z > tilt_threshold_max) {
+        if (accelerometer.norm().z > tilt_threshold_max) {
             candidate = IMU::ORIENTATION_HORIZONTAL_BOTTOM;
-        } else if (accelerometer.mg().z < -tilt_threshold_max) {
+        } else if (accelerometer.norm().z < -tilt_threshold_max) {
             candidate = IMU::ORIENTATION_HORIZONTAL_TOP;
         }
     }
