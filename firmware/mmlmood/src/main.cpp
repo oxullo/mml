@@ -10,6 +10,9 @@
 #include "matrix.h"
 
 
+const uint16_t TILT_THRESHOLD_MIN = 2000;
+const uint16_t TILT_THRESHOLD_MAX = 7500;
+
 CRGB leds[NUM_LEDS];
 
 IMU imu;
@@ -45,7 +48,7 @@ void setup()
 
     FastLED.addLeds<WS2812B, MATRIX_PIN, GRB>(leds, NUM_LEDS);
 
-    imu.begin();
+    imu.begin(TILT_THRESHOLD_MIN, TILT_THRESHOLD_MAX);
     haptics.begin();
     haptics.selectLibrary(1);
     haptics.setMode(DRV2605_MODE_INTTRIG);

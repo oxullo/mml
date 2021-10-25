@@ -22,14 +22,16 @@ public:
 
     IMU();
 
-    void begin();
+    void begin(uint16_t tilt_threshold_min, uint16_t tilt_threshold_max);
     void update();
 
 private:
     LIS2DTW12 accelerometer;
     uint16_t orientation_counters[MAX_ORIENTATIONS];
+    uint16_t tilt_threshold_min;
+    uint16_t tilt_threshold_max;
 
-    void update_orientation();
+    void evaluate_orientation();
 };
 
 #endif /* SRC_IMU_H_ */

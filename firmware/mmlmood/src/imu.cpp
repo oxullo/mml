@@ -4,13 +4,17 @@
 #include "imu.h"
 
 
-IMU::IMU()
+IMU::IMU() :
+    tilt_threshold_min(0),
+    tilt_threshold_max(0)
 {
 }
 
 
-void IMU::begin()
+void IMU::begin(uint16_t tilt_threshold_min, uint16_t tilt_threshold_max)
 {
+    this->tilt_threshold_min = tilt_threshold_min;
+    this->tilt_threshold_max = tilt_threshold_max;
     accelerometer.begin();
 }
 
@@ -18,7 +22,7 @@ void IMU::update()
 {
     if (accelerometer.is_data_ready()) {
         accelerometer.read();
-        update_orientation();
+        evaluate_orientation();
 
 //        Serial.print(accelerometer.mg().x);
 //        Serial.print(" ");
@@ -34,31 +38,28 @@ void IMU::update()
     }
 }
 
-void IMU::update_orientation()
+void IMU::evaluate_orientation()
 {
-    const uint16_t TILT_THRESHOLD_MIN = 2000;
-    const uint16_t TILT_THRESHOLD_MAX = 7500;
-
     IMU::Orientation candidate = IMU::ORIENTATION_UNKNOWN;
 
-    if (abs(accelerometer.mg().z) < TILT_THRESHOLD_MIN) {
-        if (abs(accelerometer.mg().x) < TILT_THRESHOLD_MIN) {
-            if (accelerometer.mg().y > TILT_THRESHOLD_MAX) {
+    if (abs(accelerometer.mg().z) < tilt_threshold_min) {
+        if (abs(accelerometer.mg().x) < tilt_threshold_min) {
+            if (accelerometer.mg().y > tilt_threshold_max) {
                 candidate = IMU::ORIENTATION_VERTICAL_NORMAL;
-            } else if (accelerometer.mg().y < -TILT_THRESHOLD_MAX) {
+            } else if (accelerometer.mg().y < -tilt_threshold_max) {
                 candidate = IMU::ORIENTATION_VERTICAL_180;
             }
-        } else if (abs(accelerometer.mg().y) < TILT_THRESHOLD_MIN) {
-            if (accelerometer.mg().x > TILT_THRESHOLD_MAX) {
+        } else if (abs(accelerometer.mg().y) < tilt_threshold_min) {
+            if (accelerometer.mg().x > tilt_threshold_max) {
                 candidate = IMU::ORIENTATION_VERTICAL_90CW;
-            } else if (accelerometer.mg().x < -TILT_THRESHOLD_MAX) {
+            } else if (accelerometer.mg().x < -tilt_threshold_max) {
                 candidate = IMU::ORIENTATION_VERTICAL_90CCW;
             }
         }
     } else {
-        if (accelerometer.mg().z > TILT_THRESHOLD_MAX) {
+        if (accelerometer.mg().z > tilt_threshold_max) {
             candidate = IMU::ORIENTATION_HORIZONTAL_BOTTOM;
-        } else if (accelerometer.mg().z < -TILT_THRESHOLD_MAX) {
+        } else if (accelerometer.mg().z < -tilt_threshold_max) {
             candidate = IMU::ORIENTATION_HORIZONTAL_TOP;
         }
     }
