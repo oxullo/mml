@@ -6,7 +6,8 @@
 
 IMU::IMU() :
     tilt_threshold_min(0),
-    tilt_threshold_max(0)
+    tilt_threshold_max(0),
+    last_orientation(IMU::ORIENTATION_UNKNOWN)
 {
 }
 
@@ -18,27 +19,25 @@ void IMU::begin(uint16_t tilt_threshold_min, uint16_t tilt_threshold_max)
     accelerometer.begin();
 }
 
-void IMU::update()
+// Returns ORIENTATION_UNKNOWN when no orientation change is detected
+IMU::Orientation IMU::update()
 {
     if (accelerometer.is_data_ready()) {
         accelerometer.read();
-        evaluate_orientation();
+        IMU::Orientation current_orientation = evaluate_orientation();
 
-//        Serial.print(accelerometer.mg().x);
-//        Serial.print(" ");
-//        Serial.print(accelerometer.mg().y);
-//        Serial.print(" ");
-//        Serial.println(accelerometer.mg().z);
+        if (current_orientation != IMU::ORIENTATION_UNKNOWN &&
+                current_orientation != last_orientation) {
+            last_orientation = current_orientation;
 
-        for (uint8_t i=0 ; i < IMU::MAX_ORIENTATIONS ; ++i) {
-            if (orientation_counters[i] > 200) {
-                Serial.println(i);
-            }
+            return current_orientation;
         }
     }
+
+    return IMU::ORIENTATION_UNKNOWN;
 }
 
-void IMU::evaluate_orientation()
+IMU::Orientation IMU::evaluate_orientation()
 {
     IMU::Orientation candidate = IMU::ORIENTATION_UNKNOWN;
 
@@ -64,13 +63,21 @@ void IMU::evaluate_orientation()
         }
     }
 
-    if (orientation_counters[candidate] < 300) {
+    if (orientation_counters[candidate] < COUNT_THRESHOLD + COUNT_HYSTERESIS) {
         ++orientation_counters[candidate];
     }
 
+    IMU::Orientation detected = IMU::ORIENTATION_UNKNOWN;
     for (uint8_t i=0 ; i < IMU::MAX_ORIENTATIONS ; ++i) {
         if (i != candidate && orientation_counters[i] != 0) {
             --orientation_counters[i];
         }
+
+        // TODO: invalidate when more than one counter asserts
+        if (orientation_counters[i] > COUNT_THRESHOLD) {
+            detected = (IMU::Orientation)i;
+        }
     }
+
+    return detected;
 }

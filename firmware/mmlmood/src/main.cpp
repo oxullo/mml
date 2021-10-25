@@ -60,7 +60,11 @@ void setup()
 
 void loop()
 {
-    imu.update();
+    IMU::Orientation new_orientation = imu.update();
+
+    if (new_orientation != IMU::ORIENTATION_UNKNOWN) {
+        // do the magic
+    }
 
     EVERY_N_MILLISECONDS(500) {
         digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));

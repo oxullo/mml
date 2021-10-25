@@ -9,6 +9,9 @@
 class IMU {
 public:
     static const uint8_t MAX_ORIENTATIONS = 7;
+    // TODO: time-invariant (in respect to ODR)
+    const uint16_t COUNT_THRESHOLD = 200;
+    const uint16_t COUNT_HYSTERESIS = 100;
 
     typedef enum Orientation {
         ORIENTATION_UNKNOWN,
@@ -23,15 +26,16 @@ public:
     IMU();
 
     void begin(uint16_t tilt_threshold_min, uint16_t tilt_threshold_max);
-    void update();
+    Orientation update();
 
 private:
     LIS2DTW12 accelerometer;
     uint16_t orientation_counters[MAX_ORIENTATIONS];
     uint16_t tilt_threshold_min;
     uint16_t tilt_threshold_max;
+    Orientation last_orientation;
 
-    void evaluate_orientation();
+    IMU::Orientation evaluate_orientation();
 };
 
 #endif /* SRC_IMU_H_ */
