@@ -1,8 +1,7 @@
 #include <Arduino.h>
 
-#include <Adafruit_DRV2605.h>
-
 #include "imu.h"
+#include "haptics.h"
 #include "matrix.h"
 #include "animator.h"
 
@@ -19,7 +18,6 @@ const uint16_t TILT_THRESHOLD_MAX = 7500;
 
 CRGB leds[NUM_LEDS];
 
-Adafruit_DRV2605 haptics;
 Animator* animators_map[IMU::MAX_ORIENTATIONS];
 
 
@@ -47,17 +45,12 @@ void setup()
 {
     Serial.begin(9600);
     pinMode(LED_BUILTIN, OUTPUT);
-    pinMode(HAPTIC_EN_PIN, OUTPUT);
-    digitalWrite(HAPTIC_EN_PIN, HIGH);
 
     FastLED.addLeds<WS2812B, MATRIX_PIN, GRB>(leds, NUM_LEDS);
 
-    imu.begin(TILT_THRESHOLD_MIN, TILT_THRESHOLD_MAX);
     haptics.begin();
-    haptics.selectLibrary(1);
-    haptics.setMode(DRV2605_MODE_INTTRIG);
-    haptics.setWaveform(0, 1);
-    haptics.setWaveform(1, 0);
+
+    imu.begin(TILT_THRESHOLD_MIN, TILT_THRESHOLD_MAX);
 
     animators_map[IMU::ORIENTATION_VERTICAL_NORMAL] = &rain;
     animators_map[IMU::ORIENTATION_VERTICAL_90CW] = &confetti;
