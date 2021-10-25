@@ -33,6 +33,15 @@ public:
         return last_orientation;
     }
 
+    LIS2DTW12::AccelData mg() const
+    {
+        return accelerometer.mg();
+    }
+    LIS2DTW12::AccelData norm() const
+    {
+        return accelerometer.norm();
+    }
+
 private:
     LIS2DTW12 accelerometer;
     uint16_t orientation_counters[MAX_ORIENTATIONS];
@@ -42,5 +51,7 @@ private:
 
     IMU::Orientation evaluate_orientation();
 };
+
+extern IMU imu;
 
 #endif /* SRC_IMU_H_ */

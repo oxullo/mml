@@ -13,12 +13,13 @@
 
 #include "lis2dtw12_reg.h"
 
-typedef struct AccelData {
-    float x, y, z;
-} AccelData;
 
 class LIS2DTW12 {
 public:
+    typedef struct AccelData {
+        float x, y, z;
+    } AccelData;
+
     static const uint8_t DEFAULT_ADDRESS = 0x18;
 
     LIS2DTW12();
@@ -29,7 +30,11 @@ public:
 
     const AccelData& mg() const
     {
-        return accel_mg_data;
+        return accel_mg;
+    }
+    const AccelData& norm() const
+    {
+        return accel_norm;
     }
 
 private:
@@ -38,7 +43,8 @@ private:
     stmdev_ctx_t dev_ctx;
     int16_t data_raw_acceleration[3];
     int16_t data_raw_temperature;
-    AccelData accel_mg_data;
+    AccelData accel_mg;
+    AccelData accel_norm;
     float temperature;
     uint8_t multiplier;
 

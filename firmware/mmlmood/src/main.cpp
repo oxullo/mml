@@ -17,7 +17,6 @@ const uint16_t TILT_THRESHOLD_MAX = 7500;
 
 CRGB leds[NUM_LEDS];
 
-IMU imu;
 Adafruit_DRV2605 haptics;
 Animator* animators_map[IMU::MAX_ORIENTATIONS];
 

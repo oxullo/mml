@@ -81,3 +81,5 @@ IMU::Orientation IMU::evaluate_orientation()
 
     return detected;
 }
+
+IMU imu;

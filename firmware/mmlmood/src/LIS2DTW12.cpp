@@ -112,9 +112,13 @@ void LIS2DTW12::read()
     memset(data_raw_acceleration, 0x00, 3 * sizeof(int16_t));
 
     lis2dtw12_acceleration_raw_get(&dev_ctx, data_raw_acceleration);
-    accel_mg_data.x = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[0]) * multiplier;
-    accel_mg_data.y = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[1]) * multiplier;
-    accel_mg_data.z = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[2]) * multiplier;
+    accel_mg.x = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[0]) * multiplier;
+    accel_mg.y = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[1]) * multiplier;
+    accel_mg.z = lis2dtw12_from_fs8_lp1_to_mg(data_raw_acceleration[2]) * multiplier;
+
+    accel_norm.x = accel_mg.x / 9810;
+    accel_norm.y = accel_mg.y / 9810;
+    accel_norm.z = accel_mg.z / 9810;
 
     memset(&data_raw_temperature, 0x00, sizeof(int16_t));
     lis2dtw12_temperature_raw_get(&dev_ctx, &data_raw_temperature);
