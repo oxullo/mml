@@ -2,6 +2,7 @@
 #include <string.h>
 
 #include "matrix.h"
+#include "imu.h"
 #include "rain.h"
 
 
@@ -34,11 +35,8 @@ void Drop::start()
 
 void Drop::step()
 {
-    // TODO: add imu readout accessor
-//    x += imu.a.x / 2 * friction;
-//    y += imu.a.y / 2 * friction;
-    x += 1;
-    y += 1;
+    x += imu.norm().x / 2 * friction;
+    y += imu.norm().y / 2 * friction;
 
     if (x < 0) {
         x = 0;

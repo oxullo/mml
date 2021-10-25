@@ -10,6 +10,8 @@
 #include "confetti.h"
 #include "noise.h"
 #include "swirl.h"
+#include "ballgame.h"
+#include "flashlight.h"
 
 
 const uint16_t TILT_THRESHOLD_MIN = 2000;
@@ -61,10 +63,8 @@ void setup()
     animators_map[IMU::ORIENTATION_VERTICAL_90CW] = &confetti;
     animators_map[IMU::ORIENTATION_VERTICAL_90CCW] = &noise;
     animators_map[IMU::ORIENTATION_VERTICAL_180] = &swirl;
-//    animators_map[IMU::ORIENTATION_HORIZONTAL_TOP] = &ballgame;
-//    animators_map[IMU::ORIENTATION_HORIZONTAL_BOTTOM] = &flashlight;
-    animators_map[IMU::ORIENTATION_HORIZONTAL_TOP] = NULL;
-    animators_map[IMU::ORIENTATION_HORIZONTAL_BOTTOM] = NULL;
+    animators_map[IMU::ORIENTATION_HORIZONTAL_TOP] = &ballgame;
+    animators_map[IMU::ORIENTATION_HORIZONTAL_BOTTOM] = &flashlight;
     animators_map[IMU::ORIENTATION_UNKNOWN] = NULL;
 
 
