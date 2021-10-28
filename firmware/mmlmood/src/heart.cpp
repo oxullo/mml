@@ -28,7 +28,7 @@ void play_heart()
 
             for (uint8_t y=0 ; y < MATRIX_HEIGHT ; ++y) {
                 if (column & (1 << y)) {
-                    leds[XY(x, y)] = CRGB(190, 0, 0);
+                    leds[XY(x, y)] = CHSV(HEARTH_COLS - 7 - pos, 255, 100);
                 }
             }
         }
@@ -36,5 +36,6 @@ void play_heart()
         FastLED.show();
         delay(66);
     }
+
     delay(1000);
 }
