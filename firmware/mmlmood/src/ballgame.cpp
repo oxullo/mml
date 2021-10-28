@@ -1,5 +1,6 @@
 #include "matrix.h"
 #include "imu.h"
+#include "haptics.h"
 
 #include "ballgame.h"
 
@@ -42,7 +43,8 @@ void Ballgame::render()
     bmy = (int8_t)bally;
 
     if (bmx > MATRIX_WIDTH - 1 || bmx < 0) {
-        vx = -vx * 0.5;
+        haptics.trigger(1);
+        vx = -vx * 0.8;
 
         if (bmx > MATRIX_WIDTH - 1) {
             ballx = MATRIX_WIDTH - 1;
@@ -52,7 +54,8 @@ void Ballgame::render()
     }
 
     if (bmy > MATRIX_HEIGHT - 1 || bmy < 0) {
-        vy = -vy * 0.5;
+        haptics.trigger(1);
+        vy = -vy * 0.8;
 
         if (bmy > MATRIX_HEIGHT - 1) {
             bally = MATRIX_HEIGHT - 1;
