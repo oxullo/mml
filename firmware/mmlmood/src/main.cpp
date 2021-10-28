@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <heart.h>
 
 #include "imu.h"
 #include "haptics.h"
@@ -11,6 +12,7 @@
 #include "swirl.h"
 #include "ballgame.h"
 #include "flashlight.h"
+#include "heart.h"
 
 
 const float TILT_THRESHOLD_MIN = 0.4;
@@ -19,26 +21,6 @@ const float TILT_THRESHOLD_MAX = 0.7;
 CRGB leds[NUM_LEDS];
 
 Animator* animators_map[IMU::MAX_ORIENTATIONS];
-
-
-void tester()
-{
-    for (uint8_t i=0 ; i < MATRIX_WIDTH ; ++i) {
-        leds[XY(i, i)] = CRGB::Red;
-        FastLED.show();
-        delay(100);
-    }
-
-    for (uint8_t i=0 ; i < MATRIX_WIDTH ; ++i) {
-        leds[XY(MATRIX_WIDTH - i - 1, i)] = CRGB::Green;
-        FastLED.show();
-        delay(100);
-    }
-    delay(1000);
-
-    FastLED.clear();
-    FastLED.show();
-}
 
 
 void setup()
@@ -61,7 +43,7 @@ void setup()
     animators_map[IMU::ORIENTATION_UNKNOWN] = NULL;
 
 
-    tester();
+    play_heart();
 }
 
 void loop()
