@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.7.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,43 +66,6 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -70,12 +76,6 @@
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
-<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
-<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
-<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
-<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
-<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
@@ -115,20 +115,20 @@
 <layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
 <layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
 <layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
-<layer number="136" name="silktop" color="7" fill="1" visible="no" active="yes"/>
-<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="yes"/>
-<layer number="138" name="NEw" color="7" fill="1" visible="no" active="yes"/>
-<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="yes"/>
-<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="yes"/>
-<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="yes"/>
-<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="yes"/>
-<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="yes"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="NEw" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
-<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="yes"/>
-<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="yes"/>
-<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="yes"/>
-<layer number="149" name="mReference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="no"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="no"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
@@ -137,14 +137,14 @@
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
-<layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
-<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
-<layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
-<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="yes"/>
-<layer number="195" name="mNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="196" name="mValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="no"/>
-<layer number="200" name="200bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="7" fill="10" visible="no" active="no"/>
 <layer number="202" name="202bmp" color="7" fill="10" visible="no" active="no"/>
 <layer number="203" name="203bmp" color="7" fill="10" visible="no" active="no"/>
@@ -8258,7 +8258,7 @@
 <rectangle x1="16.345" y1="70.525" x2="18.285" y2="70.535" layer="200"/>
 <rectangle x1="18.745" y1="70.525" x2="22.105" y2="70.535" layer="200"/>
 <text x="0" y="-0.05" size="0.02" layer="200" font="vector">C:/Users/xi/Downloads/mml-qr.bmp</text>
-<text x="73" y="30.5" size="1.016" layer="22" font="vector" rot="SMR270" align="bottom-right">MwMwLights rev A
+<text x="7" y="50" size="1.016" layer="22" font="vector" rot="SMR90" align="bottom-right">MwMwLights rev B
 MCU 2021-11-02</text>
 </plain>
 <libraries>
@@ -8362,14 +8362,6 @@ MCU 2021-11-02</text>
 </library>
 <library name="xul" urn="urn:adsk.eagle:library:12589754">
 <packages>
-<package name="SSM-102-S-DV" urn="urn:adsk.eagle:footprint:31083156/4" library_version="47">
-<smd name="P$1" x="-1.27" y="2.82575" dx="1.016" dy="2.2225" layer="1"/>
-<smd name="P$2" x="1.27" y="2.82575" dx="1.016" dy="2.2225" layer="1"/>
-<smd name="P$3" x="-1.27" y="-2.82575" dx="1.016" dy="2.2225" layer="1"/>
-<smd name="P$4" x="1.27" y="-2.82575" dx="1.016" dy="2.2225" layer="1"/>
-<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="XDCR_VEML7700-TT" urn="urn:adsk.eagle:footprint:31180080/1" library_version="51">
 <wire x1="-1.95" y1="3.4" x2="1.05" y2="3.4" width="0.127" layer="51"/>
 <wire x1="-1.95" y1="-3.4" x2="1.05" y2="-3.4" width="0.127" layer="51"/>
@@ -8394,7 +8386,7 @@ MCU 2021-11-02</text>
 <smd name="3" x="-1.55" y="-0.635" dx="1.6" dy="0.7" layer="1"/>
 <smd name="4" x="-1.55" y="-1.905" dx="1.6" dy="0.7" layer="1"/>
 </package>
-<package name="217182-0001" urn="urn:adsk.eagle:footprint:31088717/1" library_version="47">
+<package name="217182-0001" urn="urn:adsk.eagle:footprint:31088717/4" library_version="79">
 <hole x="-3.75" y="0" drill="0.52"/>
 <smd name="A1" x="-2.75" y="0.865" dx="0.3" dy="0.87" layer="1"/>
 <smd name="A4" x="-1.25" y="0.865" dx="0.3" dy="0.87" layer="1"/>
@@ -8451,17 +8443,12 @@ MCU 2021-11-02</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="SSM-102-S-DV" urn="urn:adsk.eagle:package:31083157/5" type="model" library_version="47">
-<packageinstances>
-<packageinstance name="SSM-102-S-DV"/>
-</packageinstances>
-</package3d>
 <package3d name="XDCR_VEML7700-TT" urn="urn:adsk.eagle:package:31180075/3" type="model" library_version="59">
 <packageinstances>
 <packageinstance name="XDCR_VEML7700-TT"/>
 </packageinstances>
 </package3d>
-<package3d name="217182-0001" urn="urn:adsk.eagle:package:31088718/2" type="model" library_version="47">
+<package3d name="217182-0001" urn="urn:adsk.eagle:package:31088718/5" type="model" library_version="79">
 <packageinstances>
 <packageinstance name="217182-0001"/>
 </packageinstances>
@@ -8601,25 +8588,31 @@ MCU 2021-11-02</text>
 </library>
 <library name="xul" urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ">
 <packages>
-<package name="M50-3600542R" urn="urn:adsk.eagle:footprint:31329751/2" library_version="12">
-<smd name="1" x="-2.54" y="1.94" dx="0.8" dy="2.62" layer="1"/>
-<smd name="3" x="-1.27" y="1.94" dx="0.8" dy="2.62" layer="1"/>
-<smd name="5" x="0" y="1.94" dx="0.8" dy="2.62" layer="1"/>
-<smd name="7" x="1.27" y="1.94" dx="0.8" dy="2.62" layer="1"/>
-<smd name="9" x="2.54" y="1.94" dx="0.8" dy="2.62" layer="1"/>
-<smd name="2" x="-2.54" y="-1.94" dx="0.8" dy="2.62" layer="1"/>
-<smd name="4" x="-1.27" y="-1.94" dx="0.8" dy="2.62" layer="1"/>
-<smd name="6" x="0" y="-1.94" dx="0.8" dy="2.62" layer="1"/>
-<smd name="8" x="1.27" y="-1.94" dx="0.8" dy="2.62" layer="1"/>
-<smd name="10" x="2.54" y="-1.94" dx="0.8" dy="2.62" layer="1"/>
+<package name="M50-3600542R" urn="urn:adsk.eagle:footprint:31329751/3" library_version="41">
+<smd name="2" x="-2.54" y="1.94" dx="0.8" dy="2.62" layer="1"/>
+<smd name="4" x="-1.27" y="1.94" dx="0.8" dy="2.62" layer="1"/>
+<smd name="6" x="0" y="1.94" dx="0.8" dy="2.62" layer="1"/>
+<smd name="8" x="1.27" y="1.94" dx="0.8" dy="2.62" layer="1"/>
+<smd name="10" x="2.54" y="1.94" dx="0.8" dy="2.62" layer="1"/>
+<smd name="1" x="-2.54" y="-1.94" dx="0.8" dy="2.62" layer="1"/>
+<smd name="3" x="-1.27" y="-1.94" dx="0.8" dy="2.62" layer="1"/>
+<smd name="5" x="0" y="-1.94" dx="0.8" dy="2.62" layer="1"/>
+<smd name="7" x="1.27" y="-1.94" dx="0.8" dy="2.62" layer="1"/>
+<smd name="9" x="2.54" y="-1.94" dx="0.8" dy="2.62" layer="1"/>
 <wire x1="-3.175" y1="1.7" x2="-2.2" y2="1.7" width="0.1" layer="21"/>
 <wire x1="-2.2" y1="1.7" x2="3.175" y2="1.7" width="0.1" layer="21"/>
 <wire x1="3.175" y1="1.7" x2="3.175" y2="-1.7" width="0.1" layer="21"/>
-<wire x1="3.175" y1="-1.7" x2="-3.175" y2="-1.7" width="0.1" layer="21"/>
-<wire x1="-3.175" y1="-1.7" x2="-3.175" y2="0.6" width="0.1" layer="21"/>
+<wire x1="3.175" y1="-1.7" x2="1" y2="-1.7" width="0.1" layer="21"/>
+<wire x1="1" y1="-1.7" x2="-1" y2="-1.7" width="0.1" layer="21"/>
+<wire x1="-1" y1="-1.7" x2="-2.2" y2="-1.7" width="0.1" layer="21"/>
+<wire x1="-2.2" y1="-1.7" x2="-3.175" y2="-1.7" width="0.1" layer="21"/>
+<wire x1="-3.175" y1="-1.7" x2="-3.175" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="-3.175" y1="-0.6" x2="-3.175" y2="0.6" width="0.1" layer="21"/>
 <wire x1="-3.175" y1="0.6" x2="-3.175" y2="1.7" width="0.1" layer="21"/>
-<wire x1="-3.175" y1="0.6" x2="-2.2" y2="1.7" width="0.1" layer="21"/>
-<circle x="-3.6" y="2.1" radius="0.2" width="0" layer="21"/>
+<wire x1="-1" y1="-1.7" x2="-1" y2="-1.3" width="0.1" layer="21"/>
+<wire x1="-1" y1="-1.3" x2="1" y2="-1.3" width="0.1" layer="21"/>
+<wire x1="1" y1="-1.3" x2="1" y2="-1.7" width="0.1" layer="21"/>
+<circle x="-3.6" y="-2.1" radius="0.2" width="0" layer="21"/>
 </package>
 <package name="G1040003D" urn="urn:adsk.eagle:footprint:31330091/2" library_version="32" library_locally_modified="yes">
 <smd name="P$1" x="3" y="1.25" dx="2" dy="2" layer="1"/>
@@ -8729,7 +8722,7 @@ MCU 2021-11-02</text>
 <circle x="0" y="0" radius="2.3" width="0.2" layer="21"/>
 </package>
 <package name="XUL-LOGO-8MMH" urn="urn:adsk.eagle:footprint:12590106/3" library_version="35">
-<polygon width="0.1524" layer="21" pour="solid">
+<polygon width="0.1524" layer="21">
 <vertex x="1.552853125" y="-5.55066875"/>
 <vertex x="1.476775" y="-5.63934375"/>
 <vertex x="4.233515625" y="-5.63934375"/>
@@ -8770,7 +8763,7 @@ MCU 2021-11-02</text>
 <vertex x="1.63880625" y="-5.450490625"/>
 <vertex x="1.55285625" y="-5.55066875"/>
 </polygon>
-<polygon width="0.1524" layer="21" pour="solid">
+<polygon width="0.1524" layer="21">
 <vertex x="0.331209375" y="-5.65795625"/>
 <vertex x="0.342996875" y="-5.658084375"/>
 <vertex x="0.454896875" y="-5.527903125"/>
@@ -8983,7 +8976,7 @@ MCU 2021-11-02</text>
 <vertex x="0.308125" y="-5.65598125"/>
 <vertex x="0.31955" y="-5.65724375"/>
 </polygon>
-<polygon width="0.1524" layer="21" pour="solid">
+<polygon width="0.1524" layer="21">
 <vertex x="5.364828125" y="-5.63934375"/>
 <vertex x="6.264359375" y="-5.63934375"/>
 <vertex x="6.27615" y="-5.63874375"/>
@@ -9111,7 +9104,7 @@ MCU 2021-11-02</text>
 <vertex x="5.13111875" y="-5.367896875"/>
 <vertex x="5.247284375" y="-5.502821875"/>
 </polygon>
-<polygon width="0.1524" layer="21" pour="solid">
+<polygon width="0.1524" layer="21">
 <vertex x="1.178171875" y="-7.398403125"/>
 <vertex x="1.71184375" y="-8.015309375"/>
 <vertex x="2.195684375" y="-8.015309375"/>
@@ -9197,7 +9190,7 @@ MCU 2021-11-02</text>
 <vertex x="1.16834375" y="-7.38704375"/>
 <vertex x="1.1755875" y="-7.39328125"/>
 </polygon>
-<polygon width="0.1524" layer="21" pour="solid">
+<polygon width="0.1524" layer="21">
 <vertex x="3.9837375" y="-7.6287125"/>
 <vertex x="3.9623" y="-7.65015"/>
 <vertex x="3.93429375" y="-7.66175"/>
@@ -9397,7 +9390,7 @@ MCU 2021-11-02</text>
 <vertex x="3.9953375" y="-6.0653"/>
 <vertex x="3.9953375" y="-7.60070625"/>
 </polygon>
-<polygon width="0.1524" layer="21" pour="solid">
+<polygon width="0.1524" layer="21">
 <vertex x="6.57076875" y="-8.015309375"/>
 <vertex x="6.57076875" y="-7.66175"/>
 <vertex x="5.183046875" y="-7.66175"/>
@@ -9432,14 +9425,39 @@ MCU 2021-11-02</text>
 <vertex x="4.932390625" y="-8.015309375"/>
 </polygon>
 </package>
+<package name="KMR2XXG" urn="urn:adsk.eagle:footprint:31790863/1" library_version="46">
+<smd name="1" x="2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="2" x="2.05" y="-0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="3" x="-2.05" y="-0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="4" x="-2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="5" x="0" y="1.5" dx="1.7" dy="0.55" layer="1"/>
+<wire x1="-2.1" y1="1.4" x2="2.1" y2="1.4" width="0.1" layer="21"/>
+<wire x1="2.1" y1="1.4" x2="2.1" y2="-1.4" width="0.1" layer="21"/>
+<wire x1="2.1" y1="-1.4" x2="-2.1" y2="-1.4" width="0.1" layer="21"/>
+<wire x1="-2.1" y1="-1.4" x2="-2.1" y2="1.4" width="0.1" layer="21"/>
+<wire x1="1.055" y1="-0.8" x2="1.055" y2="0.8" width="0.1" layer="21"/>
+<wire x1="1.055" y1="0.8" x2="-1.055" y2="0.8" width="0.1" layer="21"/>
+<wire x1="-1.055" y1="0.8" x2="-1.055" y2="-0.8" width="0.1" layer="21"/>
+<wire x1="-1.055" y1="-0.8" x2="1.055" y2="-0.8" width="0.1" layer="21"/>
+<text x="-2" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="HW-02-10-T-D-500-SM" urn="urn:adsk.eagle:footprint:31083062/3" library_version="46">
+<smd name="P$1" x="-1.27" y="2.82575" dx="1.016" dy="2.2225" layer="1"/>
+<smd name="P$2" x="1.27" y="2.82575" dx="1.016" dy="2.2225" layer="1"/>
+<smd name="P$3" x="-1.27" y="-2.82575" dx="1.016" dy="2.2225" layer="1"/>
+<smd name="P$4" x="1.27" y="-2.82575" dx="1.016" dy="2.2225" layer="1"/>
+<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
-<package3d name="M50-3600542R" urn="urn:adsk.eagle:package:31329753/3" type="model" library_version="12" footprint_synced="no">
+<package3d name="M50-3600542R" urn="urn:adsk.eagle:package:31329753/4" type="model" library_version="41">
 <packageinstances>
 <packageinstance name="M50-3600542R"/>
 </packageinstances>
 </package3d>
-<package3d name="G1040003D" urn="urn:adsk.eagle:package:31330092/6" type="model" library_version="32" library_locally_modified="yes" footprint_synced="no">
+<package3d name="G1040003D" urn="urn:adsk.eagle:package:31330092/6" type="model" library_version="32" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="G1040003D"/>
 </packageinstances>
@@ -9473,6 +9491,16 @@ MCU 2021-11-02</text>
 <package3d name="XUL-LOGO-8MMH" urn="urn:adsk.eagle:package:12590164/3" type="box" library_version="35">
 <packageinstances>
 <packageinstance name="XUL-LOGO-8MMH"/>
+</packageinstances>
+</package3d>
+<package3d name="KMR2XXG" urn="urn:adsk.eagle:package:31790864/1" type="model" library_version="46">
+<packageinstances>
+<packageinstance name="KMR2XXG"/>
+</packageinstances>
+</package3d>
+<package3d name="HW-02-10-T-D-500-SM" urn="urn:adsk.eagle:package:31083063/4" type="model" library_version="46">
+<packageinstances>
+<packageinstance name="HW-02-10-T-D-500-SM"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -9543,19 +9571,19 @@ Cream on SMD OFF.&lt;br&gt;
 new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TP20R" urn="urn:adsk.eagle:footprint:27929/1" library_version="3">
+<package name="TP15R" urn="urn:adsk.eagle:footprint:27924/1" library_version="3">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
-<smd name="TP" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" cream="no"/>
-<text x="-1" y="1.05" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.762" y="-1.016" size="0.0254" layer="27">&gt;VALUE</text>
+<smd name="TP" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<text x="-0.7501" y="0.8001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
 <text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="TP20R" urn="urn:adsk.eagle:package:27973/1" type="box" library_version="3">
+<package3d name="TP15R" urn="urn:adsk.eagle:package:27968/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
-<packageinstance name="TP20R"/>
+<packageinstance name="TP15R"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -9745,25 +9773,25 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </pass>
 </autorouter>
 <elements>
-<element name="X202" library="xul" library_urn="urn:adsk.eagle:library:12589754" package="SSM-102-S-DV" package3d_urn="urn:adsk.eagle:package:31083157/5" value="SSM-102-S-DV" x="70" y="70" smashed="yes" rot="MR270">
+<element name="X202" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="HW-02-10-T-D-500-SM" package3d_urn="urn:adsk.eagle:package:31083063/4" value="HW-02-10-T-D-500-SM" x="70" y="70" smashed="yes" rot="MR270">
 <attribute name="NAME" x="64.92" y="71.27" size="0.8" layer="26" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="76.35" y="72.54" size="0.8" layer="28" font="vector" rot="MR270"/>
 </element>
-<element name="X203" library="xul" library_urn="urn:adsk.eagle:library:12589754" package="SSM-102-S-DV" package3d_urn="urn:adsk.eagle:package:31083157/5" value="SSM-102-S-DV" x="10" y="70" smashed="yes" rot="MR270">
+<element name="X203" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="HW-02-10-T-D-500-SM" package3d_urn="urn:adsk.eagle:package:31083063/4" value="HW-02-10-T-D-500-SM" x="10" y="70" smashed="yes" rot="MR270">
 <attribute name="NAME" x="4.92" y="71.27" size="0.8" layer="26" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="16.35" y="72.54" size="0.8" layer="28" font="vector" rot="MR270"/>
 </element>
-<element name="X204" library="xul" library_urn="urn:adsk.eagle:library:12589754" package="SSM-102-S-DV" package3d_urn="urn:adsk.eagle:package:31083157/5" value="SSM-102-S-DV" x="70" y="10" smashed="yes" rot="MR270">
+<element name="X204" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="HW-02-10-T-D-500-SM" package3d_urn="urn:adsk.eagle:package:31083063/4" value="HW-02-10-T-D-500-SM" x="70" y="10" smashed="yes" rot="MR270">
 <attribute name="NAME" x="64.92" y="11.27" size="0.8" layer="26" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="76.35" y="12.54" size="0.8" layer="28" font="vector" rot="MR270"/>
 </element>
-<element name="X205" library="xul" library_urn="urn:adsk.eagle:library:12589754" package="SSM-102-S-DV" package3d_urn="urn:adsk.eagle:package:31083157/5" value="SSM-102-S-DV" x="10" y="10" smashed="yes" rot="MR270">
+<element name="X205" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="HW-02-10-T-D-500-SM" package3d_urn="urn:adsk.eagle:package:31083063/4" value="HW-02-10-T-D-500-SM" x="10" y="10" smashed="yes" rot="MR270">
 <attribute name="NAME" x="4.92" y="11.27" size="0.8" layer="26" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="16.35" y="12.54" size="0.8" layer="28" font="vector" rot="MR270"/>
 </element>
 <element name="U202" library="microbuilder" package="PSOP10" value="DRV2605LDGS" x="38" y="58.5" smashed="yes">
 <attribute name="LCSC_PART" value="C527464" x="38" y="58.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="35.972" y="56.976" size="0.8" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="35.972" y="56.976" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="40.56" y="56.96" size="0.8" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="U203" library="LIS2DH12TR" package="PQFN50P200X200100-12N" value="LIS2DTW12" x="62.5" y="40.5" smashed="yes" rot="R90">
@@ -9772,7 +9800,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="LCSC_PART" value="C110926" x="62.5" y="40.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="STMicroelectronics" x="62.5" y="40.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP" value="LIS2DH12TR" x="62.5" y="40.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="60.99261875" y="38.189140625" size="0.8" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="60.99261875" y="38.189140625" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="PACKAGE" value="LGA-12 STMicroelectronics" x="62.5" y="40.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PRICE" value="None" x="62.5" y="40.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/LIS2DH12TR/?ref=eda" x="62.5" y="40.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -9783,21 +9811,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="DESCRIPTION" value=" Optical Sensor 4-SMD, J-Lead " x="60.5" y="31.5" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Vishay Semiconductor" x="60.5" y="31.5" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="VEML7700-TT" x="60.5" y="31.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="56.69" y="35.31" size="0.8" layer="25" font="vector"/>
+<attribute name="NAME" x="56.69" y="35.31" size="0.8128" layer="25" font="vector"/>
 <attribute name="PACKAGE" value="SMD-4 Vishay Semiconductor" x="60.5" y="31.5" size="1.778" layer="27" display="off"/>
 <attribute name="PRICE" value="None" x="60.5" y="31.5" size="1.778" layer="27" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/VEML7700-TT/?ref=eda" x="60.5" y="31.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="56.69" y="26.42" size="0.8" layer="27" font="vector"/>
 </element>
-<element name="X201" library="xul" library_urn="urn:adsk.eagle:library:12589754" package="217182-0001" package3d_urn="urn:adsk.eagle:package:31088718/2" value="217182-0001" x="40" y="40" smashed="yes" rot="R270">
-<attribute name="NAME" x="43.54" y="42.6" size="0.8" layer="25" font="vector" rot="R270"/>
+<element name="X201" library="xul" library_urn="urn:adsk.eagle:library:12589754" package="217182-0001" package3d_urn="urn:adsk.eagle:package:31088718/5" value="217182-0001" x="40" y="40" smashed="yes" rot="R270">
+<attribute name="NAME" x="43.54" y="42.6" size="0.8128" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="35.6" y="42.8" size="0.8" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C211" library="Capacitor" package="CAPC1608X85" package3d_urn="urn:adsk.eagle:package:16290898/2" value="100n" x="28.18025" y="41.5" smashed="yes" rot="R180">
 <attribute name="CATEGORY" value="Capacitor" x="27.18025" y="41.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="" x="27.18025" y="41.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="27.18025" y="41.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="28.18025" y="39.6433" size="0.8" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="28.18025" y="39.6433" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="27.18025" y="41.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PART_STATUS" value="" x="27.18025" y="41.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="27.18025" y="41.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -9809,14 +9837,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VOLTAGE_RATING" value="" x="27.18025" y="41.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="D201" library="xul" library_urn="urn:adsk.eagle:library:12589754" package="SOT190P230X110-4N" package3d_urn="urn:adsk.eagle:package:31218491/1" value="PRTR5V0U2X" x="46" y="39.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="43.366" y="39.5" size="0.8" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="43.366" y="39.5" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="48.194" y="39.5" size="0.8" layer="27" font="vector" rot="R90" align="top-center"/>
 </element>
 <element name="R201" library="Resistor" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="1M" x="39" y="33" smashed="yes" rot="R90">
 <attribute name="CATEGORY" value="Resistor" x="39" y="33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="" x="39" y="33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="39" y="33" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="37.1433" y="33" size="0.8" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="37.1433" y="33" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="39" y="33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_STATUS" value="" x="39" y="33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="RATING" value="" x="39" y="33" size="1.778" layer="27" rot="R90" display="off"/>
@@ -9828,11 +9856,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="TYPE" value="" x="39" y="33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="40.8567" y="33" size="0.8" layer="27" font="vector" rot="R90" align="top-center"/>
 </element>
-<element name="C207" library="Capacitor" package="CAPC1608X85" package3d_urn="urn:adsk.eagle:package:16290898/2" value="4n7 1kV" x="41" y="33" smashed="yes" rot="R270">
+<element name="C207" library="Capacitor" package="CAPC1608X85" package3d_urn="urn:adsk.eagle:package:16290898/2" value="4n7 250V" x="41" y="33" smashed="yes" rot="R270">
 <attribute name="CATEGORY" value="Capacitor" x="41" y="33" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="41" y="33" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="41" y="33" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="42.8567" y="33" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="42.8567" y="33" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="41" y="33" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_STATUS" value="" x="41" y="33" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="41" y="33" size="1.778" layer="27" rot="R270" display="off"/>
@@ -9850,7 +9878,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="IMPEDANCE_FREQ" value="" x="45" y="45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="" x="45" y="45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="45" y="45" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="43.1433" y="45" size="0.8" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="43.1433" y="45" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="45" y="45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_STATUS" value="" x="45" y="45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="REVERSE_VOLTAGE" value="" x="45" y="45" size="1.778" layer="27" rot="R90" display="off"/>
@@ -9865,7 +9893,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="46" y="42.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="46" y="42.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="46" y="42.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="46" y="44.8567" size="0.8" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="46" y="44.8567" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="46" y="42.5" size="1.778" layer="27" display="off"/>
 <attribute name="PART_STATUS" value="" x="46" y="42.5" size="1.778" layer="27" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="46" y="42.5" size="1.778" layer="27" display="off"/>
@@ -9880,7 +9908,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="46" y="47.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="46" y="47.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="46" y="47.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="46" y="49.3567" size="0.8" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="46" y="49.3567" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="46" y="47.5" size="1.778" layer="27" display="off"/>
 <attribute name="PART_STATUS" value="" x="46" y="47.5" size="1.778" layer="27" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="46" y="47.5" size="1.778" layer="27" display="off"/>
@@ -9891,12 +9919,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VALUE" x="46" y="45.6433" size="0.8" layer="27" font="vector" align="top-center"/>
 <attribute name="VOLTAGE_RATING" value="" x="46" y="47.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X101" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="M50-3600542R" package3d_urn="urn:adsk.eagle:package:31329753/3" value="M50-3600542R" x="13.5" y="25" smashed="yes" rot="MR270"/>
+<element name="X101" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="M50-3600542R" package3d_urn="urn:adsk.eagle:package:31329753/4" value="M50-3600542R" x="13.5" y="25" smashed="yes" rot="MR270"/>
 <element name="C203" library="Capacitor" package="CAPC1608X85" package3d_urn="urn:adsk.eagle:package:16290898/2" value="100n" x="57" y="31.5" smashed="yes" rot="R270">
 <attribute name="CATEGORY" value="Capacitor" x="57" y="30.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="57" y="30.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="57" y="30.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="58.8567" y="31.5" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="58.8567" y="31.5" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="57" y="30.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_STATUS" value="" x="57" y="30.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="57" y="30.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -9911,7 +9939,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="63.5" y="38" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="63.5" y="38" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="63.5" y="38" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="62.5" y="39.8567" size="0.8" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="62.5" y="39.8567" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="63.5" y="38" size="1.778" layer="27" display="off"/>
 <attribute name="PART_STATUS" value="" x="63.5" y="38" size="1.778" layer="27" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="63.5" y="38" size="1.778" layer="27" display="off"/>
@@ -9926,7 +9954,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="41" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="41" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="41" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="42.8567" y="58.5" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="42.8567" y="58.5" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="41" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_STATUS" value="" x="41" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="41" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -9941,7 +9969,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="37" y="52" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="37" y="52" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="37" y="52" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="38.8567" y="53" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="38.8567" y="53" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="37" y="52" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_STATUS" value="" x="37" y="52" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="37" y="52" size="1.778" layer="27" rot="R270" display="off"/>
@@ -9956,7 +9984,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="35" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="35" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="35" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="36.8567" y="58.5" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="36.8567" y="58.5" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="35" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_STATUS" value="" x="35" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="35" y="57.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -9974,7 +10002,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="DESCRIPTION" value="CHIP LED FLAT" x="23" y="23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="" x="23" y="23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="23" y="23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="28.3701" y="23.873" size="0.8" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="28.3701" y="23.873" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="23" y="23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_STATUS" value="" x="23" y="23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="23" y="23" size="1.778" layer="27" rot="R90" display="off"/>
@@ -9988,7 +10016,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Resistor" x="52" y="29.0561" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="52" y="29.0561" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="52" y="29.0561" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="53.8567" y="30.0561" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="53.8567" y="30.0561" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="52" y="29.0561" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_STATUS" value="" x="52" y="29.0561" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="RATING" value="" x="52" y="29.0561" size="1.778" layer="27" rot="R270" display="off"/>
@@ -10004,7 +10032,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Resistor" x="52" y="34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="" x="52" y="34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="52" y="34" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="50.1433" y="33" size="0.8" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="50.1433" y="33" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="52" y="34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_STATUS" value="" x="52" y="34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="RATING" value="" x="52" y="34" size="1.778" layer="27" rot="R90" display="off"/>
@@ -10016,15 +10044,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="TYPE" value="" x="52" y="34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="53.8567" y="33" size="0.8" layer="27" font="vector" rot="R90" align="top-center"/>
 </element>
-<element name="XTAL101" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="XTAL410X150X90" package3d_urn="urn:adsk.eagle:package:31332890/2" value="CM41532768DZCT" x="39.5" y="11.5" smashed="yes">
-<attribute name="NAME" x="39.5" y="12.89" size="0.8" layer="25" font="vector" align="bottom-center"/>
+<element name="XTAL101" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="XTAL410X150X90" package3d_urn="urn:adsk.eagle:package:31332890/2" value="ABS09-32.768KHZ-1-T" x="39.5" y="11.5" smashed="yes">
+<attribute name="NAME" x="39.5" y="12.89" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="39.5" y="10.11" size="0.8" layer="27" font="vector" align="top-center"/>
 </element>
-<element name="C101" library="Capacitor" package="CAPC1608X85" package3d_urn="urn:adsk.eagle:package:16290898/2" value="8p" x="37.5" y="8.5" smashed="yes" rot="R270">
+<element name="C101" library="Capacitor" package="CAPC1608X85" package3d_urn="urn:adsk.eagle:package:16290898/2" value="16p" x="37.5" y="8.5" smashed="yes" rot="R270">
 <attribute name="CATEGORY" value="Capacitor" x="37.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="37.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="37.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="39.3567" y="8.5" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="39.3567" y="8.5" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="37.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_STATUS" value="" x="37.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="37.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -10035,11 +10063,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VALUE" x="35.6433" y="8.5" size="0.8" layer="27" font="vector" rot="R270" align="top-center"/>
 <attribute name="VOLTAGE_RATING" value="" x="37.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C102" library="Capacitor" package="CAPC1608X85" package3d_urn="urn:adsk.eagle:package:16290898/2" value="8p" x="41.5" y="8.5" smashed="yes" rot="R270">
+<element name="C102" library="Capacitor" package="CAPC1608X85" package3d_urn="urn:adsk.eagle:package:16290898/2" value="16p" x="41.5" y="8.5" smashed="yes" rot="R270">
 <attribute name="CATEGORY" value="Capacitor" x="41.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="41.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="41.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="43.3567" y="8.5" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="43.3567" y="8.5" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="41.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_STATUS" value="" x="41.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="41.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -10050,11 +10078,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VALUE" x="39.6433" y="8.5" size="0.8" layer="27" font="vector" rot="R270" align="top-center"/>
 <attribute name="VOLTAGE_RATING" value="" x="41.5" y="6.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R104" library="Resistor" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="470R" x="33" y="25" smashed="yes">
+<element name="R104" library="Resistor" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="1k" x="33" y="25" smashed="yes">
 <attribute name="CATEGORY" value="Resistor" x="35" y="25" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="35" y="25" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="35" y="25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="33" y="26.8567" size="0.8" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="33" y="26.8567" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="35" y="25" size="1.778" layer="27" display="off"/>
 <attribute name="PART_STATUS" value="" x="35" y="25" size="1.778" layer="27" display="off"/>
 <attribute name="RATING" value="" x="35" y="25" size="1.778" layer="27" display="off"/>
@@ -10073,7 +10101,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="IMPEDANCE_FREQ" value="" x="50.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="50.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="50.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="51.9341" y="11.5" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="51.9341" y="11.5" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="50.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_STATUS" value="" x="50.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="REVERSE_VOLTAGE" value="" x="50.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -10088,7 +10116,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="52.5" y="16.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="52.5" y="16.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="52.5" y="16.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.5" y="18.3567" size="0.8" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="51.5" y="18.3567" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="52.5" y="16.5" size="1.778" layer="27" display="off"/>
 <attribute name="PART_STATUS" value="" x="52.5" y="16.5" size="1.778" layer="27" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="52.5" y="16.5" size="1.778" layer="27" display="off"/>
@@ -10103,7 +10131,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="52.5" y="14.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="52.5" y="14.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="52.5" y="14.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.5" y="16.3567" size="0.8" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="51.5" y="16.3567" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="52.5" y="14.5" size="1.778" layer="27" display="off"/>
 <attribute name="PART_STATUS" value="" x="52.5" y="14.5" size="1.778" layer="27" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="52.5" y="14.5" size="1.778" layer="27" display="off"/>
@@ -10118,7 +10146,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="50.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="" x="50.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="50.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="48.6433" y="25.5" size="0.8" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="48.6433" y="25.5" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="50.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_STATUS" value="" x="50.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="50.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -10130,14 +10158,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VOLTAGE_RATING" value="" x="50.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U204" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="SOT95P280X145-5N" package3d_urn="urn:adsk.eagle:package:21900792/1" value="74LVC1G125-SOT753" x="59.5" y="64" smashed="yes" rot="R90">
-<attribute name="NAME" x="56.8662" y="64" size="0.8" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="56.8662" y="64" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="61.6938" y="64" size="0.8" layer="27" font="vector" rot="R90" align="top-center"/>
 </element>
 <element name="R202" library="Resistor" package="RESC1608X60" package3d_urn="urn:adsk.eagle:package:16378565/2" value="5k1" x="35" y="41" smashed="yes">
 <attribute name="CATEGORY" value="Resistor" x="37" y="41" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="37" y="41" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="37" y="41" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="35" y="42.8567" size="0.8" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="35" y="42.8567" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="37" y="41" size="1.778" layer="27" display="off"/>
 <attribute name="PART_STATUS" value="" x="37" y="41" size="1.778" layer="27" display="off"/>
 <attribute name="RATING" value="" x="37" y="41" size="1.778" layer="27" display="off"/>
@@ -10153,7 +10181,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Resistor" x="37" y="39.3" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="37" y="39.3" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="37" y="39.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="35" y="41.1567" size="0.8" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="35" y="41.1567" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="37" y="39.3" size="1.778" layer="27" display="off"/>
 <attribute name="PART_STATUS" value="" x="37" y="39.3" size="1.778" layer="27" display="off"/>
 <attribute name="RATING" value="" x="37" y="39.3" size="1.778" layer="27" display="off"/>
@@ -10169,7 +10197,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="26" y="39.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="" x="26" y="39.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="26" y="39.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="28" y="37.6433" size="0.8" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="28" y="37.6433" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="26" y="39.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PART_STATUS" value="" x="26" y="39.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="26" y="39.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -10181,14 +10209,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VOLTAGE_RATING" value="" x="26" y="39.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U101" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="QFP80P900X900X120-32N" package3d_urn="urn:adsk.eagle:package:13273427/1" value="SAMD21E18A-AUT" x="44.5" y="19.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.883803125" y="19.499996875" size="0.8" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="38.883803125" y="19.499996875" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="50.1162" y="19.499996875" size="0.8" layer="27" font="vector" rot="R90" align="top-center"/>
 </element>
 <element name="C104" library="Capacitor" package="CAPC1608X85" package3d_urn="urn:adsk.eagle:package:16290898/2" value="1u" x="36.5" y="19.7" smashed="yes" rot="R180">
 <attribute name="CATEGORY" value="Capacitor" x="35.5" y="19.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="" x="35.5" y="19.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="35.5" y="19.7" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="36.5" y="17.8433" size="0.8" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="36.5" y="17.8433" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="35.5" y="19.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PART_STATUS" value="" x="35.5" y="19.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="35.5" y="19.7" size="1.778" layer="27" rot="R180" display="off"/>
@@ -10203,7 +10231,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="35.5" y="18.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="" x="35.5" y="18.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="35.5" y="18.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="36.5" y="16.2433" size="0.8" layer="25" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="36.5" y="16.2433" size="0.8128" layer="25" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="35.5" y="18.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PART_STATUS" value="" x="35.5" y="18.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="35.5" y="18.1" size="1.778" layer="27" rot="R180" display="off"/>
@@ -10218,7 +10246,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="33.1" y="19.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="" x="33.1" y="19.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="33.1" y="19.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="31.2433" y="18.5" size="0.8" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="31.2433" y="18.5" size="0.8128" layer="25" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="33.1" y="19.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_STATUS" value="" x="33.1" y="19.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="33.1" y="19.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -10233,7 +10261,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Resistor" x="60.5" y="67" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="" x="60.5" y="67" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="60.5" y="67" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="61.9359" y="68" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="61.9359" y="68" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="60.5" y="67" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_STATUS" value="" x="60.5" y="67" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="RATING" value="" x="60.5" y="67" size="1.778" layer="27" rot="R270" display="off"/>
@@ -10249,7 +10277,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="CATEGORY" value="Capacitor" x="63.5" y="43" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="63.5" y="43" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="63.5" y="43" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="62.5" y="44.4341" size="0.8" layer="25" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="62.5" y="44.4341" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="63.5" y="43" size="1.778" layer="27" display="off"/>
 <attribute name="PART_STATUS" value="" x="63.5" y="43" size="1.778" layer="27" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="63.5" y="43" size="1.778" layer="27" display="off"/>
@@ -10260,15 +10288,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VALUE" x="62.5" y="41.5659" size="0.8" layer="27" font="vector" align="top-center"/>
 <attribute name="VOLTAGE_RATING" value="" x="63.5" y="43" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U205" library="xul-vreg" library_urn="urn:adsk.wipprod:fs.file:vf.sBqP_HxCQGKtoA4aud-5pQ" package="SOT95P280X145-5N" package3d_urn="urn:adsk.eagle:package:31141096/1" value="SPX3819SOT-23-5" x="28" y="44.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="30.6336" y="44.5" size="0.8" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<element name="U205" library="xul-vreg" library_urn="urn:adsk.wipprod:fs.file:vf.sBqP_HxCQGKtoA4aud-5pQ" package="SOT95P280X145-5N" package3d_urn="urn:adsk.eagle:package:31141096/1" value="MIC5216-3.3YM5-TR" x="28" y="44.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="30.6336" y="44.5" size="0.8128" layer="25" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="25.8064" y="44.5" size="0.8" layer="27" font="vector" rot="R270" align="top-center"/>
 </element>
 <element name="C210" library="Capacitor" package="CAPC3216X135" package3d_urn="urn:adsk.eagle:package:16290893/2" value="220u" x="46.5" y="50" smashed="yes">
 <attribute name="CATEGORY" value="Capacitor" x="46.5" y="50" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="" x="46.5" y="50" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="46.5" y="50" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="46.5" y="51.8567" size="1.27" layer="25" align="bottom-center"/>
+<attribute name="NAME" x="46.5" y="51.8567" size="0.8128" layer="25" font="vector" align="bottom-center"/>
 <attribute name="OPERATING_TEMP" value="" x="46.5" y="50" size="1.778" layer="27" display="off"/>
 <attribute name="PART_STATUS" value="" x="46.5" y="50" size="1.778" layer="27" display="off"/>
 <attribute name="ROHS_COMPLIANT" value="" x="46.5" y="50" size="1.778" layer="27" display="off"/>
@@ -10279,49 +10307,51 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VALUE" x="46.5" y="48.1433" size="1.27" layer="27" align="top-center"/>
 <attribute name="VOLTAGE_RATING" value="" x="46.5" y="50" size="1.778" layer="27" display="off"/>
 </element>
-<element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1" value="TPTP20R" x="17" y="44.2" smashed="yes">
-<attribute name="NAME" x="16" y="45.25" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="1" x="17" y="44.2" size="1.778" layer="27" display="off"/>
+<element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="17" y="44.2" smashed="yes">
+<attribute name="NAME" x="16" y="45.25" size="0.8128" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="0" x="17" y="44.2" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="17" y="44.2" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="16.238" y="43.184" size="0.0254" layer="27"/>
 </element>
-<element name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1" value="TPTP20R" x="21" y="42" smashed="yes">
-<attribute name="NAME" x="20" y="43.05" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="1" x="21" y="42" size="1.778" layer="27" display="off"/>
+<element name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="21" y="42" smashed="yes">
+<attribute name="NAME" x="20" y="43.05" size="0.8128" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="0" x="21" y="42" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="21" y="42" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="20.238" y="40.984" size="0.0254" layer="27"/>
 </element>
-<element name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1" value="TPTP20R" x="21" y="46.5" smashed="yes">
-<attribute name="NAME" x="20" y="47.55" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="1" x="21" y="46.5" size="1.778" layer="27" display="off"/>
+<element name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="21" y="46.5" smashed="yes">
+<attribute name="NAME" x="20" y="47.55" size="0.8128" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="0" x="21" y="46.5" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="21" y="46.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="20.238" y="45.484" size="0.0254" layer="27"/>
 </element>
-<element name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1" value="TPTP20R" x="59" y="40.5" smashed="yes">
-<attribute name="NAME" x="58" y="41.55" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="1" x="59" y="40.5" size="1.778" layer="27" display="off"/>
+<element name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="59" y="40.5" smashed="yes">
+<attribute name="NAME" x="58" y="41.55" size="0.8128" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="0" x="59" y="40.5" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="59" y="40.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="58.238" y="39.484" size="0.0254" layer="27"/>
 </element>
-<element name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1" value="TPTP20R" x="65.5" y="40.5" smashed="yes">
-<attribute name="NAME" x="64.5" y="41.55" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="1" x="65.5" y="40.5" size="1.778" layer="27" display="off"/>
+<element name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="65.5" y="40.5" smashed="yes">
+<attribute name="NAME" x="64.5" y="41.55" size="0.8128" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="0" x="65.5" y="40.5" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="65.5" y="37.96" size="1" layer="37"/>
 <attribute name="VALUE" x="64.738" y="39.484" size="0.0254" layer="27"/>
 </element>
-<element name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1" value="TPTP20R" x="60.5" y="71" smashed="yes">
-<attribute name="NAME" x="59.5" y="72.05" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="1" x="60.5" y="71" size="1.778" layer="27" display="off"/>
+<element name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="60.5" y="71" smashed="yes">
+<attribute name="NAME" x="59.5" y="72.05" size="0.8128" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="0" x="60.5" y="71" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="60.5" y="68.46" size="1" layer="37"/>
 <attribute name="VALUE" x="59.738" y="69.984" size="0.0254" layer="27"/>
 </element>
-<element name="PB1" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="EVQP0/P1/9P" package3d_urn="urn:adsk.eagle:package:31222170/2" value="EVQP0/P1/9P" x="60.5" y="21.5" smashed="yes" rot="R90"/>
-<element name="U$1" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="XUL-LOGO-8MMH" package3d_urn="urn:adsk.eagle:package:12590164/3" value="" x="67.5" y="50.5" smashed="yes" rot="MR270"/>
+<element name="PB102" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="EVQP0/P1/9P" package3d_urn="urn:adsk.eagle:package:31222170/2" value="EVQP0/P1/9P" x="60.5" y="21.5" smashed="yes" rot="R90"/>
+<element name="U$1" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="XUL-LOGO-8MMH" package3d_urn="urn:adsk.eagle:package:12590164/3" value="" x="12.5" y="29.5" smashed="yes" rot="MR90"/>
+<element name="PB101" library="xul" library_urn="urn:adsk.wipprod:fs.file:vf.XNXu5mE9SkmlQ3EcVUFJDQ" package="KMR2XXG" package3d_urn="urn:adsk.eagle:package:31790864/1" value="KMR2XXG" x="21" y="25.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="18.46" y="23.5" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="24" y="23.5" size="1.27" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="X202" pad="P$4"/>
-<contactref element="X202" pad="P$3"/>
 <contactref element="X204" pad="P$4"/>
 <contactref element="X204" pad="P$3"/>
 <contactref element="X205" pad="P$4"/>
@@ -10330,7 +10360,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <contactref element="X204" pad="P$1"/>
 <contactref element="X205" pad="P$2"/>
 <contactref element="X205" pad="P$1"/>
-<contactref element="X202" pad="P$1"/>
 <contactref element="X201" pad="B12"/>
 <contactref element="X201" pad="A1"/>
 <contactref element="X201" pad="A12"/>
@@ -10375,7 +10404,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <contactref element="C212" pad="2"/>
 <contactref element="U205" pad="2"/>
 <contactref element="U204" pad="1"/>
-<polygon width="0.2" layer="16" spacing="1.27" pour="solid" thermals="yes">
+<polygon width="0.2" layer="16">
 <vertex x="0.1" y="0.1"/>
 <vertex x="79.9" y="0.1"/>
 <vertex x="79.9" y="79.9"/>
@@ -10392,7 +10421,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <via x="45.25" y="37.5" extent="1-16" drill="0.2"/>
 <wire x1="58.95" y1="30.865" x2="57.1396" y2="30.865" width="0.2" layer="1"/>
 <wire x1="57.1396" y1="30.865" x2="57" y2="30.7254" width="0.2" layer="1"/>
-<contactref element="TP1" pad="TP"/>
 <wire x1="38.5" y1="56.3" x2="38.5" y2="57.5" width="0.2" layer="1"/>
 <via x="38.5" y="57.5" extent="1-16" drill="0.2"/>
 <wire x1="39.135" y1="37.25" x2="39.135" y2="36.5" width="0.2" layer="1"/>
@@ -10475,23 +10503,34 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="63.265" y1="40.235" x2="63.735" y2="40.235" width="0.2" layer="1"/>
 <wire x1="63.735" y1="40.235" x2="63.85" y2="40.35" width="0.2" layer="1"/>
 <via x="63.85" y="40.35" extent="1-16" drill="0.2"/>
-<wire x1="17" y1="44.2" x2="15.5" y2="44.2" width="0.2" layer="1"/>
-<via x="15.5" y="44.2" extent="1-16" drill="0.2"/>
-<contactref element="PB1" pad="B@2"/>
-<contactref element="PB1" pad="B@1"/>
+<contactref element="PB102" pad="B@2"/>
+<contactref element="PB102" pad="B@1"/>
 <wire x1="57.1" y1="23.75" x2="59.3" y2="23.75" width="0.2" layer="1"/>
 <via x="59.3" y="23.75" extent="1-16" drill="0.2"/>
+<contactref element="X202" pad="P$1"/>
+<contactref element="TP1" pad="TP"/>
+<wire x1="17" y1="44.2" x2="15.5" y2="44.2" width="0.2" layer="1"/>
+<via x="15.5" y="44.2" extent="1-16" drill="0.35"/>
+<contactref element="PB101" pad="5"/>
+<contactref element="PB101" pad="2"/>
+<wire x1="19.5" y1="25.5" x2="18.8" y2="25.5" width="0.2" layer="1"/>
+<via x="18.8" y="25.5" extent="1-16" drill="0.2"/>
+<wire x1="21.8" y1="27.55" x2="21.8" y2="28.5" width="0.2" layer="1"/>
+<via x="21.8" y="28.5" extent="1-16" drill="0.2"/>
+<contactref element="X202" pad="P$2"/>
+<contactref element="X202" pad="P$3"/>
 <wire x1="59.3" y1="23.75" x2="63.84" y2="23.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MATRIX_DATA">
-<contactref element="X202" pad="P$2"/>
 <contactref element="R204" pad="1"/>
+<wire x1="60.5" y1="68.8152" x2="60.5852" y2="68.73" width="0.2" layer="1"/>
+<via x="71" y="68.73" extent="1-16" drill="0.35"/>
+<wire x1="71" y1="68.73" x2="60.5852" y2="68.73" width="0.2" layer="1"/>
+<wire x1="60.5852" y1="68.73" x2="60.5" y2="68.8152" width="0.2" layer="1"/>
 <contactref element="TP6" pad="TP"/>
 <wire x1="60.5" y1="68.8152" x2="60.5" y2="71" width="0.2" layer="1"/>
-<wire x1="67.17425" y1="68.73" x2="65.5" y2="68.73" width="0.2" layer="16"/>
-<via x="65.5" y="68.73" extent="1-16" drill="0.2"/>
-<wire x1="65.5" y1="68.73" x2="60.5852" y2="68.73" width="0.2" layer="1"/>
-<wire x1="60.5852" y1="68.73" x2="60.5" y2="68.8152" width="0.2" layer="1"/>
+<contactref element="X202" pad="P$4"/>
+<wire x1="71" y1="68.73" x2="72.82575" y2="68.73" width="0.2" layer="16"/>
 </signal>
 <signal name="+3V3">
 <contactref element="X101" pad="1"/>
@@ -10522,16 +10561,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="28.95485" y1="39.57945" x2="28.8754" y2="39.5" width="0.2" layer="1"/>
 <wire x1="57.1396" y1="32.135" x2="58.95" y2="32.135" width="0.2" layer="1"/>
 <wire x1="57.1396" y1="32.135" x2="57" y2="32.2746" width="0.2" layer="1"/>
-<polygon width="0.2" layer="1" spacing="1.27" pour="solid" thermals="yes">
+<polygon width="0.2" layer="1">
 <vertex x="0.1" y="0.1"/>
 <vertex x="79.9" y="0.1"/>
 <vertex x="79.9" y="43.9"/>
 <vertex x="0.1" y="43.9"/>
 </polygon>
 <contactref element="TP2" pad="TP"/>
-<wire x1="11.56" y1="27.54" x2="11.52" y2="27.5" width="0.2" layer="16"/>
-<wire x1="11.52" y1="27.5" x2="9.5" y2="27.5" width="0.2" layer="16"/>
-<via x="9.5" y="27.5" extent="1-16" drill="0.2"/>
+<via x="17.5" y="27.0718" extent="1-16" drill="0.35"/>
+<wire x1="15.44" y1="27.54" x2="17.0318" y2="27.54" width="0.2" layer="16"/>
+<wire x1="17.0318" y1="27.54" x2="17.5" y2="27.0718" width="0.2" layer="16"/>
+<wire x1="62.25" y1="41.265" x2="62.25" y2="39.735" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_D_P">
 <contactref element="X201" pad="B6"/>
@@ -10650,24 +10690,23 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="54.6848" y1="32.1848" x2="55.5" y2="33" width="0.2" layer="1"/>
 <wire x1="55.5" y1="33" x2="55.905" y2="33.405" width="0.2" layer="1"/>
 <wire x1="55.905" y1="33.405" x2="58.95" y2="33.405" width="0.2" layer="1"/>
-<contactref element="TP4" pad="TP"/>
-<wire x1="58.95" y1="40.45" x2="59" y2="40.5" width="0.2" layer="1"/>
 <wire x1="61.75" y1="39.735" x2="59.765" y2="39.735" width="0.2" layer="1"/>
-<wire x1="59.765" y1="39.735" x2="59" y2="40.5" width="0.2" layer="1"/>
 <wire x1="59" y1="50" x2="55.5" y2="53.5" width="0.2" layer="1"/>
 <wire x1="55.5" y1="53.5" x2="39" y2="53.5" width="0.2" layer="1"/>
 <wire x1="39" y1="53.5" x2="37.5" y2="55" width="0.2" layer="1"/>
 <wire x1="37.5" y1="55" x2="37.5" y2="56.3" width="0.2" layer="1"/>
-<wire x1="59" y1="40.5" x2="59" y2="42" width="0.2" layer="1"/>
 <wire x1="59" y1="43.5" x2="59" y2="50" width="0.2" layer="1"/>
 <wire x1="58.95" y1="33.405" x2="58.95" y2="34.5" width="0.2" layer="1"/>
 <via x="58.95" y="34.5" extent="1-16" drill="0.2"/>
-<wire x1="58.95" y1="34.5" x2="58.95" y2="37.5" width="0.2" layer="16"/>
-<wire x1="59" y1="42" x2="59" y2="43.5" width="0.2" layer="1"/>
+<wire x1="59" y1="43.5" x2="59" y2="42" width="0.2" layer="1"/>
 <via x="58.9398875" y="37.5101125" extent="1-16" drill="0.2"/>
-<wire x1="58.95" y1="37.5" x2="58.9398875" y2="37.5101125" width="0.2" layer="16"/>
-<wire x1="58.9398875" y1="37.5101125" x2="58.95" y2="37.520225" width="0.2" layer="1"/>
-<wire x1="58.95" y1="37.520225" x2="58.95" y2="40.45" width="0.2" layer="1"/>
+<contactref element="TP4" pad="TP"/>
+<wire x1="59" y1="42" x2="59" y2="40.5" width="0.2" layer="1"/>
+<wire x1="59.765" y1="39.735" x2="59" y2="40.5" width="0.2" layer="1"/>
+<wire x1="58.9398875" y1="37.5101125" x2="58.9398875" y2="40.4398875" width="0.2" layer="1"/>
+<wire x1="58.9398875" y1="40.4398875" x2="59" y2="40.5" width="0.2" layer="1"/>
+<wire x1="58.9398875" y1="37.5101125" x2="58.9398875" y2="34.5101125" width="0.2" layer="16"/>
+<wire x1="58.9398875" y1="34.5101125" x2="58.95" y2="34.5" width="0.2" layer="16"/>
 </signal>
 <signal name="I2C_SDA">
 <contactref element="U201" pad="4"/>
@@ -10690,44 +10729,51 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <via x="62.5" y="33.5" extent="1-16" drill="0.2"/>
 <wire x1="62.5" y1="33.5" x2="62.5" y2="34.5" width="0.2" layer="1"/>
 <wire x1="62.5" y1="34.5" x2="64.5" y2="36.5" width="0.2" layer="1"/>
-<contactref element="TP5" pad="TP"/>
 <wire x1="64.5" y1="36.5" x2="65.5" y2="37.5" width="0.2" layer="1"/>
-<wire x1="65.5" y1="37.5" x2="65.5" y2="40.5" width="0.2" layer="1"/>
-<wire x1="64.735" y1="39.735" x2="63.25" y2="39.735" width="0.2" layer="1"/>
-<wire x1="65.5" y1="40.5" x2="64.735" y2="39.735" width="0.2" layer="1"/>
-<wire x1="65.5" y1="40.5" x2="65.5" y2="44.5" width="0.2" layer="1"/>
-<wire x1="65.5" y1="44.5" x2="56" y2="54" width="0.2" layer="1"/>
+<wire x1="64.5" y1="39.735" x2="63.25" y2="39.735" width="0.2" layer="1"/>
+<wire x1="56" y1="54" x2="65.5" y2="44.5" width="0.2" layer="1"/>
 <wire x1="56" y1="54" x2="39.2" y2="54" width="0.2" layer="1"/>
 <wire x1="39.2" y1="54" x2="38" y2="55.2" width="0.2" layer="1"/>
 <wire x1="38" y1="55.2" x2="38" y2="56.3" width="0.2" layer="1"/>
+<contactref element="TP5" pad="TP"/>
+<wire x1="65.5" y1="37.5" x2="65.5" y2="40.5" width="0.2" layer="1"/>
+<wire x1="64.5" y1="39.735" x2="65.265" y2="40.5" width="0.2" layer="1"/>
+<wire x1="65.265" y1="40.5" x2="65.5" y2="40.5" width="0.2" layer="1"/>
+<wire x1="65.5" y1="44.5" x2="65.5" y2="40.5" width="0.2" layer="1"/>
 </signal>
 <signal name="/RESET">
 <contactref element="X101" pad="10"/>
 <contactref element="U101" pad="26"/>
 <wire x1="40.3187" y1="21.5" x2="39" y2="21.5" width="0.2" layer="1"/>
-<wire x1="39" y1="21.5" x2="36" y2="24.5" width="0.2" layer="1"/>
-<wire x1="36" y1="24.5" x2="32" y2="28.5" width="0.2" layer="1"/>
-<wire x1="32" y1="28.5" x2="17.5" y2="28.5" width="0.2" layer="1"/>
-<wire x1="17.5" y1="28.5" x2="15.5" y2="26.5" width="0.2" layer="1"/>
-<wire x1="15.5" y1="26.5" x2="15.5" y2="23.5" width="0.2" layer="1"/>
-<wire x1="15.5" y1="23.5" x2="16.5" y2="22.5" width="0.2" layer="1"/>
-<wire x1="16.5" y1="22.5" x2="17.5" y2="22.5" width="0.2" layer="1"/>
-<via x="17.5" y="22.5" extent="1-16" drill="0.2"/>
-<wire x1="17.5" y1="22.5" x2="15.48" y2="22.5" width="0.2" layer="16"/>
-<wire x1="15.48" y1="22.5" x2="15.44" y2="22.46" width="0.2" layer="16"/>
+<wire x1="39" y1="21.5" x2="36.25" y2="24.25" width="0.2" layer="1"/>
+<wire x1="9.5" y1="23" x2="13.5" y2="27" width="0.2" layer="1"/>
+<wire x1="9.5" y1="23" x2="9.5" y2="22.5" width="0.2" layer="1"/>
+<via x="9.5" y="22.5" extent="1-16" drill="0.35"/>
+<wire x1="9.5" y1="22.5" x2="11.52" y2="22.5" width="0.2" layer="16"/>
+<wire x1="11.52" y1="22.5" x2="11.56" y2="22.46" width="0.2" layer="16"/>
+<contactref element="PB101" pad="1"/>
+<wire x1="13.5" y1="27" x2="14.05" y2="27.55" width="0.2" layer="1"/>
+<wire x1="14.05" y1="27.55" x2="20.2" y2="27.55" width="0.2" layer="1"/>
+<wire x1="20.2" y1="27.55" x2="20.2" y2="26.8" width="0.2" layer="1"/>
+<wire x1="20.2" y1="26.8" x2="20.5" y2="26.5" width="0.2" layer="1"/>
+<wire x1="20.5" y1="26.5" x2="34" y2="26.5" width="0.2" layer="1"/>
+<wire x1="34" y1="26.5" x2="36.25" y2="24.25" width="0.2" layer="1"/>
 </signal>
 <signal name="SWDIO">
 <contactref element="X101" pad="2"/>
 <contactref element="U101" pad="32"/>
-<wire x1="15.44" y1="27.54" x2="17.46" y2="27.54" width="0.2" layer="16"/>
-<wire x1="17.46" y1="27.54" x2="18" y2="27" width="0.2" layer="16"/>
-<wire x1="18" y1="27" x2="18" y2="25.5" width="0.2" layer="16"/>
-<via x="18" y="25.5" extent="1-16" drill="0.2"/>
-<wire x1="18" y1="25.5" x2="28.5" y2="15" width="0.2" layer="1"/>
-<wire x1="28.5" y1="15" x2="37" y2="15" width="0.2" layer="1"/>
+<wire x1="37" y1="15" x2="28.5" y2="15" width="0.2" layer="1"/>
 <wire x1="37" y1="15" x2="38.5" y2="16.5" width="0.2" layer="1"/>
 <wire x1="38.5" y1="16.5" x2="38.7" y2="16.7" width="0.2" layer="1"/>
 <wire x1="38.7" y1="16.7" x2="40.3187" y2="16.7" width="0.2" layer="1"/>
+<wire x1="11.56" y1="27.54" x2="11.52" y2="27.5" width="0.2" layer="16"/>
+<wire x1="11.52" y1="27.5" x2="9" y2="27.5" width="0.2" layer="16"/>
+<via x="9" y="27.5" extent="1-16" drill="0.35"/>
+<wire x1="9" y1="27.5" x2="7" y2="25.5" width="0.2" layer="1"/>
+<wire x1="7" y1="25.5" x2="7" y2="22.5" width="0.2" layer="1"/>
+<wire x1="7" y1="22.5" x2="7" y2="22" width="0.2" layer="1"/>
+<wire x1="7" y1="22" x2="14" y2="15" width="0.2" layer="1"/>
+<wire x1="14" y1="15" x2="28.5" y2="15" width="0.2" layer="1"/>
 </signal>
 <signal name="SWCLK">
 <contactref element="X101" pad="4"/>
@@ -10735,12 +10781,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="40.3187" y1="17.5" x2="38.5" y2="17.5" width="0.2" layer="1"/>
 <wire x1="38.5" y1="17.5" x2="37" y2="16" width="0.2" layer="1"/>
 <wire x1="37" y1="16" x2="29" y2="16" width="0.2" layer="1"/>
-<wire x1="29" y1="16" x2="19" y2="26" width="0.2" layer="1"/>
-<wire x1="19" y1="26" x2="18.7" y2="26.3" width="0.2" layer="1"/>
-<wire x1="18.7" y1="26.3" x2="17.5" y2="26.3" width="0.2" layer="1"/>
-<via x="17.5" y="26.3" extent="1-16" drill="0.2"/>
-<wire x1="17.5" y1="26.3" x2="17.47" y2="26.27" width="0.2" layer="16"/>
-<wire x1="17.47" y1="26.27" x2="15.44" y2="26.27" width="0.2" layer="16"/>
+<wire x1="29" y1="16" x2="14.5" y2="16" width="0.2" layer="1"/>
+<wire x1="14.5" y1="16" x2="8" y2="22.5" width="0.2" layer="1"/>
+<wire x1="11.56" y1="26.27" x2="9" y2="26.27" width="0.2" layer="16"/>
+<via x="9" y="26.27" extent="1-16" drill="0.35"/>
+<wire x1="8" y1="25.27" x2="9" y2="26.27" width="0.2" layer="1"/>
+<wire x1="8" y1="22.5" x2="8" y2="25.27" width="0.2" layer="1"/>
 </signal>
 <signal name="XLRM_INT1">
 <contactref element="U203" pad="12"/>
@@ -10907,7 +10953,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <contactref element="C201" pad="1"/>
 <contactref element="C202" pad="1"/>
 <contactref element="C210" pad="1"/>
-<polygon width="0.2" layer="1" spacing="1.27" pour="solid" thermals="yes">
+<polygon width="0.2" layer="1">
 <vertex x="0.1" y="44.6"/>
 <vertex x="79.9" y="44.6"/>
 <vertex x="79.9" y="79.9"/>
@@ -10925,8 +10971,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </signal>
 <signal name="BUTTON">
 <contactref element="U101" pad="12"/>
-<contactref element="PB1" pad="A@1"/>
-<contactref element="PB1" pad="A@2"/>
+<contactref element="PB102" pad="A@1"/>
+<contactref element="PB102" pad="A@2"/>
 <wire x1="48.6813" y1="19.1" x2="51" y2="19.1" width="0.2" layer="1"/>
 <via x="51" y="19.1" extent="1-16" drill="0.2"/>
 <wire x1="51" y1="19.1" x2="53" y2="19.1" width="0.2" layer="16"/>
@@ -10938,9 +10984,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8000000"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFFB4B4B4"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
